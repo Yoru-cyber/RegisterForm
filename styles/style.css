@@ -11,6 +11,13 @@ body {
     rgba(252, 176, 69, 1) 100%
   );
 }
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
 .container {
   height: 100vh;
   display: flex;
@@ -28,4 +35,45 @@ body {
   gap: 5px;
   border-radius: 10px;
   border-color: grey;
+}
+.textInput{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+.textInput:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: fit-content;
+    animation: increase 1s;
+   
+}
+.textInput:hover{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: fit-content;
+    animation: increase 1s;
+    animation-fill-mode: forwards;
+   
+}
+.buttonSub{
+    border: none;
+}
+.buttonSub:hover{
+    animation: increase 1s;
+    animation-fill-mode: forwards;
+   
+}
+@keyframes increase {
+    0%{
+        
+        transform: scale(1, 1);
+    }
+    100%{
+        
+        transform: scale(1.1, 1.1);
+    }
 }

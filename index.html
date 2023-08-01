@@ -17,13 +17,26 @@
       <div class="card">
         <h2>Join the rustacean army !</h2>
         <p>Because the 🦀 will rule them all 👑</p>
-        <label for="name">Enter your first name: </label>
-        <input type="text" inputmode="latin-name" />
-        <label for="lastName">Enter your last name: </label>
-        <input type="text" inputmode="latin-name" />
-        <label for="email">Enter your email: </label>
-        <input type="email" inputmode="email" />
-        <input type="submit" />
+        <form action="post">
+          <ul style="list-style: none;">
+            <li>
+              <label for="name">First name: </label>
+              <input class="textInput" type="text" inputmode="latin-name" placeholder="Han" style="margin: 20px;" />
+              <label for="lastName">Last name: </label>
+              <input class="textInput" type="text" inputmode="latin-name" placeholder="Solo" style="margin: 20px;" />
+            </li>
+            <li style="text-align: center;">
+              <label for="email">Enter your email: </label>
+              <input class="textInput" type="email" placeholder="RustLover1973@gmail.com" inputmode="email" style="margin: 20px;"/>
+            </li>
+           <li style="justify-content: center; text-align: center;"> 
+            <p>I solemnly swear that I give myself upon the crab</p>
+            <input type="submit" class="buttonSub" value="🦀" style="justify-content: center;"/></li>
+          </ul>
+         
+        </form>
+
+        
       </div>
     </div>
   </body>
